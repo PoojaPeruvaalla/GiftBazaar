@@ -1,0 +1,260 @@
+
+.about-page {
+  background: #FFFAF7;
+  color: #422936;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+
+.about-hero {
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(120deg, #FCE4EC, #FFF0E9);
+}
+
+.about-hero-content {
+  max-width: 750px;
+}
+
+.about-tag {
+  color: #A92C58;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.about-hero h1 {
+  font-size: 45px;
+  color: #5C263B;
+  margin: 20px 0;
+}
+
+.about-hero h1 span,
+.story-content h2 span {
+  color: #A92C58;
+}
+
+.about-hero p {
+  color: #765968;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.about-btn {
+  margin-top: 25px;
+  padding: 13px 35px;
+  background: #A92C58;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.about-btn:hover {
+  background: #812044;
+}
+
+
+/* STORY */
+
+.about-story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px 8%;
+}
+
+.story-image {
+  width: 45%;
+}
+
+.story-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.story-content {
+  width: 50%;
+}
+
+.story-content h2 {
+  font-size: 32px;
+  margin: 18px 0;
+  color: #5C263B;
+}
+
+.story-content p {
+  color: #765968;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+
+/* MISSION */
+
+.mission-section {
+  text-align: center;
+  padding: 70px 8%;
+  background: #FCEBF0;
+}
+
+.mission-section h2,
+.why-section h2 {
+  color: #A92C58;
+  font-size: 32px;
+  margin: 15px 0 35px;
+}
+
+.mission-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.mission-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(169,44,88,0.08);
+  transition: 0.3s;
+}
+
+.mission-card:hover {
+  transform: translateY(-7px);
+}
+
+.mission-card span {
+  font-size: 40px;
+}
+
+.mission-card h3 {
+  color: #A92C58;
+  margin: 15px 0;
+}
+
+.mission-card p {
+  color: #765968;
+  line-height: 1.7;
+}
+
+
+/* WHY CHOOSE US */
+
+.why-section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.why-grid div {
+  padding: 25px 15px;
+}
+
+.why-grid span {
+  font-size: 38px;
+}
+
+.why-grid h3 {
+  color: #A92C58;
+  margin: 15px 0 10px;
+}
+
+.why-grid p {
+  color: #765968;
+  line-height: 1.6;
+}
+
+
+/* BANNER */
+
+.about-banner {
+  background: linear-gradient(120deg, #A92C58, #D76B91);
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+
+.about-banner h2 {
+  font-size: 32px;
+}
+
+.about-banner p {
+  margin: 15px 0 25px;
+}
+
+.about-banner button {
+  padding: 13px 35px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #A92C58;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-story {
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 7%;
+  }
+
+  .story-image,
+  .story-content {
+    width: 100%;
+  }
+
+  .story-image img {
+    height: 250px;
+  }
+
+  .mission-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .about-hero h1 {
+    font-size: 27px;
+  }
+
+  .story-content h2,
+  .mission-section h2,
+  .why-section h2 {
+    font-size: 25px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+

@@ -1,0 +1,32 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Caption stays fixed while images change */
+.fixed-caption {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: linear-gradient(to right, red,orange,green); 
+  /* -webkit-background-clip: text;  */
+  background-clip: text; 
+  color: transparent;
+  text-align: left;
+}
+
+.fixed-caption h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.fixed-caption p {
+  font-size: 20px;
+}
