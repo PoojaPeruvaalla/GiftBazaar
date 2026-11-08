@@ -23,8 +23,7 @@ const [search, setSearch] = useState("");
 
 // Fetch products from JSON Server
 useEffect(() => {
-axios
-.get("http://localhost:3000/gifts")
+axios.get("https://giftbazaar-api.onrender.com/gifts")
 .then((response) => {
 setGift(response.data);
 })
@@ -146,6 +145,7 @@ setSearch("");
 }
 
 return ( <main className="shop-page">
+
 
   {/* Shop Heading */}
   <div className="shop-heading">
